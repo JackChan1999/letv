@@ -1,0 +1,42 @@
+package com.letv.lemallsdk.util;
+
+public class Constants {
+    public static final String BASE_URL = "http://sdk.go.lemall.com/api";
+    public static final String BUY_BY_WATCHING = "buyByWatching";
+    public static final String CALLBACK_CANCEL_PAY = "cancel_pay";
+    public static final String CALLBACK_FAILD = "failed";
+    public static final String CALLBACK_HTTPSTATUSEXCEPTION = "HttpStatusException";
+    public static final String CALLBACK_IOEXCEPTION = "IOException";
+    public static final String CALLBACK_JSONERROR = "jsonError";
+    public static final String CALLBACK_NONETWORK = "noNetwork";
+    public static final String CALLBACK_PARAM_FREE = "no_param";
+    public static final String CALLBACK_SERVER_NO_PARAM = "server_no_param";
+    public static final String CALLBACK_SUCCESS = "success";
+    public static final String GUESTLOGIN = "http://authentication.go.lemall.com/api/list/generateSession.json?IS_PHONE=1";
+    public static final String HTTP_GET_CASHIER = "http://morder.go.lemall.com/api/service/doPayment.json";
+    public static final String HTTP_GET_ORDERDETAIL = (my_order_uri + "api/query/getOrderDetail.json");
+    public static final String HTTP_GET_TITLEBAR = "http://sdk.go.lemall.com/api/tool/getInitStatus.json";
+    public static final String HTTP_GET_URL = "http://sdk.go.lemall.com/api/page/getUrlByPageflag.json";
+    public static final String IMAGE_URI = "http://img3.hdletv.com/";
+    public static final String IMAGE_URID = "http://img2.hdletv.com/data/";
+    public static final String KEY_ISFIRST = "isfirst";
+    public static final String LETV_INLAY_PAY_KEY = "";
+    public static final String LETV_PUB_PAY_KEY = "baf3981e9d96d132112480bb7569f15e";
+    public static final String PAGE_FLAG = "pageFlag";
+    public static final String PAGE_FLAG_CLASSIFY = "classify";
+    public static final String PAGE_FLAG_CLOSE = "close";
+    public static final String PAGE_FLAG_ORDERCENTER = "ordercenter";
+    public static final String PAGE_FLAG_ORDERDETAIL = "orderdetail";
+    public static final String PAGE_FLAG_OTHER = "other";
+    public static final String PAGE_FLAG_PAYSUCCESS = "paysuccess";
+    public static final String PAGE_FLAG_PRODUCTDETAIL = "productdetail";
+    public static final String PAGE_FLAG_RECOMMENDED = "recommended";
+    public static final String PAGE_FLAG_SHOPPINGCART = "shoppingcart";
+    public static final String PAGE_FLAG_USERCENTER = "usercenter";
+    public static final String RECOMMEND_PAGE = "";
+    public static final String THIRDLOGIN = "http://authentication.go.lemall.com/api/web/query/leTVPhoneThirdPartyLogin.json";
+    public static final String UUID = "uuid";
+    public static final String VALUE_ID = "value";
+    public static final String cashier_uri = "http://payment.go.lemall.com/";
+    public static String my_order_uri = "http://orderperiphery.go.lemall.com/";
+}

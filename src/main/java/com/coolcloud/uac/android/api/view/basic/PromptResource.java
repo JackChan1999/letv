@@ -1,0 +1,392 @@
+package com.coolcloud.uac.android.api.view.basic;
+
+import android.content.Context;
+import com.letv.android.client.album.half.widget.HalfPlaySoftKeyboardFragment;
+import com.letv.android.client.share.videoshot.VideoShotEditActivity;
+import com.letv.core.bean.AlbumInfo;
+import com.letv.core.constant.LiveRoomConstant;
+import com.letv.core.messagebus.config.LeMessageIds;
+import com.letv.datastatistics.constant.PageIdConstant.Channel;
+import com.media.ffmpeg.FFMpegPlayer;
+
+public class PromptResource {
+    public static String getResId(int rcode) {
+        switch (rcode) {
+            case 0:
+                return L10NString.getString("umgr_rcode_ok");
+            case 1:
+                return L10NString.getString("umgr_rcode_fail");
+            case 2:
+                return L10NString.getString("umgr_exception");
+            case 3:
+                return L10NString.getString("umgr_http_method_unsupported");
+            case 4:
+                return L10NString.getString("umgr_http_illegal_request");
+            case 5:
+                return L10NString.getString("umgr_http_timeout");
+            case 1000:
+                return L10NString.getString("umgr_rcode_illigel_phone");
+            case 1001:
+                return L10NString.getString("umgr_rcode_sms_beyond_maximum");
+            case 1002:
+                return L10NString.getString("umgr_rcode_username_used");
+            case LiveRoomConstant.LIVE_ROOM_LOADER_BOOK_ID /*1003*/:
+                return L10NString.getString("umgr_error_illigel_pwd");
+            case 1004:
+                return L10NString.getString("umgr_rcode_illegal_activate_code");
+            case LiveRoomConstant.LIVE_ROOM_LOADER_HK_TVSERIES_ID /*1005*/:
+                return L10NString.getString("umgr_rcode_activatecode_error");
+            case LiveRoomConstant.LIVE_ROOM_LOADER_HK_VARIETY_ID /*1006*/:
+                return L10NString.getString("umgr_rcode_mail_used");
+            case LiveRoomConstant.LIVE_ROOM_LOADER_HK_MUSIC_ID /*1007*/:
+                return L10NString.getString("umgr_rumgr_uid_illigel");
+            case 1008:
+                return L10NString.getString("umgr_rcode_email_illigel");
+            case 1009:
+                return L10NString.getString("umgr_rcode_imei_illigel");
+            case 1010:
+                return L10NString.getString("umgr_rcode_ccid_illigel");
+            case VideoShotEditActivity.VIDEOSHOT_VIEWPAGER_FLIP /*1011*/:
+                return L10NString.getString("umgr_rcode_account_illigel");
+            case VideoShotEditActivity.VIDEOSHOT_VIEWPAGER_DELETE /*1012*/:
+                return L10NString.getString("umgr_rcode_user_absent");
+            case VideoShotEditActivity.VIDEOSHOT_VIEWPAGER_DESTORY /*1013*/:
+                return L10NString.getString("umgr_rcode_password_mismatch");
+            case 1014:
+                return L10NString.getString("umgr_rcode_bind_device_error");
+            case VideoShotEditActivity.VIDEOSHOT_VIEWPAGER_CHANGE_VOICE /*1015*/:
+                return L10NString.getString("umgr_rcode_accountid_illigel");
+            case VideoShotEditActivity.VIDEOSHOT_PIC_DOWNLOAD_FINISHD /*1016*/:
+                return L10NString.getString("umgr_rcode_session_illigel");
+            case 1017:
+                return L10NString.getString("umgr_rcode_get_uid_by_accountid_error");
+            case 1018:
+                return L10NString.getString("umgr_rcode_logout_failure");
+            case Channel.TYPE_PREMIER /*1019*/:
+                return L10NString.getString("umgr_rcode_retry_beyond_maximum");
+            case Channel.TYPE_SCIENCECHANNEL /*1020*/:
+                return L10NString.getString("umgr_rcode_appid_absent");
+            case 1021:
+                return L10NString.getString("umgr_rcode_illegal_thirdid");
+            case 1022:
+                return L10NString.getString("umgr_rcode_bind_phone_error");
+            case 1023:
+                return L10NString.getString("umgr_rcode_get_bind_info_failure");
+            case 1024:
+                return L10NString.getString("umgr_rcode_illegal_nickname");
+            case 1025:
+                return L10NString.getString("umgr_rcode_nickname_present");
+            case FFMpegPlayer.DECODE_VMALLOC_ERROR /*1026*/:
+                return L10NString.getString("umgr_rcode_generate_activate_code_failure");
+            case 1027:
+                return L10NString.getString("umgr_rcode_tm_invalid");
+            case FFMpegPlayer.DECODE_CODECOPEN_ERROR /*1028*/:
+                return L10NString.getString("umgr_rcode_puv_invalid");
+            case 1029:
+                return L10NString.getString("umgr_rcode_ret_invalid");
+            case 1030:
+                return L10NString.getString("umgr_rcode_ret_statu_invalid");
+            case 1031:
+                return L10NString.getString("umgr_rcode_binded_by_coolcloud");
+            case 1032:
+                return L10NString.getString("umgr_rcode_login_third_server_failure");
+            case 1033:
+                return L10NString.getString("umgr_rcode_encrypt_failure");
+            case 1034:
+                return L10NString.getString("umgr_rcode_cache_failure");
+            case Channel.TYPE_PANORAMA /*1035*/:
+                return L10NString.getString("umgr_rcode_check_session_failure");
+            case 1036:
+                return L10NString.getString("umgr_rcode_illegal_signature");
+            case 1037:
+                return L10NString.getString("umgr_rcode_activate_code_expired");
+            case 1038:
+                return L10NString.getString("umgr_rcode_bind_third_failure");
+            case 1039:
+                return L10NString.getString("umgr_rcode_binded_by_third");
+            case 1040:
+                return L10NString.getString("umgr_rcode_logined_in_bbs");
+            case 1041:
+                return L10NString.getString("umgr_rcode_session_overdue");
+            case 1042:
+                return L10NString.getString("umgr_rcode_session_absent");
+            case 1043:
+                return L10NString.getString("umgr_error_contains_keywords");
+            case 1044:
+                return L10NString.getString("umgr_rcode_activate_sms_unarrived");
+            case 1045:
+                return L10NString.getString("umgr_rcode_activate_sms_unarrived");
+            case 1046:
+                return L10NString.getString("umgr_rcode_login_error");
+            case 1047:
+                return L10NString.getString("umgr_rcode_imsi_ccid_registered");
+            case 1048:
+                return L10NString.getString("umgr_rcode_account_is_not_active");
+            case 1049:
+                return L10NString.getString("umgr_rcode_unbindlist_illegalthird");
+            case 1050:
+                return L10NString.getString("umgr_rcode_unbind_device_failure");
+            case 1051:
+                return L10NString.getString("umgr_rcode_device_binded");
+            case 1053:
+                return L10NString.getString("umgr_rcode_device_binded");
+            case 1062:
+                return L10NString.getString("umgr_rcode_phone_beyond_maximum");
+            case 1063:
+                return L10NString.getString("umgr_rcode_captcha_error_null");
+            case 1064:
+                return L10NString.getString("umgr_rcode_captcha_error");
+            case 1065:
+                return L10NString.getString("umgr_rcode_captcha_key_error");
+            case LeMessageIds.MSG_JS_INTERFACE_START_CAPTURE /*1104*/:
+                return L10NString.getString("umgr_rcode_user_disabled");
+            case LeMessageIds.MSG_WEBVIEW_SYNC_LOGIN /*1105*/:
+                return L10NString.getString("umgr_rcode_user_probation_expired");
+            case LeMessageIds.MSG_WEBVIEW_COOKIE_SSO_TOKEN /*1106*/:
+                return L10NString.getString("umgr_rcode_device_register_user_too_much");
+            case LeMessageIds.MSG_WEBVIEW_LAUNCH_FOLLOW /*1109*/:
+                return L10NString.getString("umgr_rcode_modification_failure");
+            case 1110:
+                return L10NString.getString("umgr_rcode_device_login_user_too_much");
+            case HalfPlaySoftKeyboardFragment.LOAD_FINISHED_NONE_VIDEOSHOT_PIC /*1111*/:
+                return L10NString.getString("umgr_rcode_get_password_failure");
+            case 1112:
+                return L10NString.getString("umgr_rcode_incorrect_original_password");
+            case 1113:
+                return L10NString.getString("umgr_rcode_get_userinfo_failure");
+            case 1114:
+                return L10NString.getString("umgr_rcode_user_activated");
+            case 1115:
+                return L10NString.getString("umgr_rcode_activate_link_failure");
+            case 1116:
+                return L10NString.getString("umgr_rcode_userinfo_modification_failure");
+            case 1119:
+                return L10NString.getString("umgr_rcode_private_password_modification_failure");
+            case 1122:
+                return L10NString.getString("umgr_rcode_database_failure");
+            case 1128:
+                return L10NString.getString("umgr_rcode_phoneno_binded");
+            case 1129:
+                return L10NString.getString("umgr_rcode_link_failure");
+            case 1130:
+                return L10NString.getString("umgr_rcode_device_disabled");
+            case 1133:
+                return L10NString.getString("umgr_rcode_authcode_failure");
+            case 1134:
+                return L10NString.getString("umgr_rcode_authcode_expired");
+            case 1136:
+                return L10NString.getString("umgr_rcode_user_unbind_phoneno");
+            case 1138:
+                return L10NString.getString("umgr_rcode_password_modification_failure");
+            case 1139:
+                return L10NString.getString("umgr_rcode_phoneno_register_required");
+            case 1140:
+                return L10NString.getString("umgr_rcode_illigel_private_password");
+            case 1146:
+                return L10NString.getString("umgr_rcode_illigel_device");
+            case 1147:
+                return L10NString.getString("umgr_rcode_user_unactivited");
+            case 1149:
+                return L10NString.getString("umgr_rcode_user_password_empty");
+            case 1151:
+                return L10NString.getString("umgr_rcode_network_failure");
+            case 1155:
+                return L10NString.getString("umgr_rcode_user_unauthed");
+            case 1156:
+                return L10NString.getString("umgr_rcode_authcode_sent_beyond_maximum");
+            case 1157:
+                return L10NString.getString("umgr_rcode_nickname_existed");
+            case 1158:
+                return L10NString.getString("umgr_rcode_user_forbidden");
+            case 1163:
+                return L10NString.getString("umgr_rcode_session_expired");
+            case 1167:
+                return L10NString.getString("umgr_rcode_deviceid_absent");
+            case 1186:
+                return L10NString.getString("umgr_rcode_third_binded");
+            case 2000:
+                return L10NString.getString("umgr_rcode_illigel_response_type");
+            case 2001:
+                return L10NString.getString("umgr_rcode_appid_required");
+            case 2002:
+                return L10NString.getString("umgr_rcode_appkey_required");
+            case AlbumInfo.Channel.TYPE_WEBVIEW /*2003*/:
+                return L10NString.getString("umgr_rcode_illigel_http_authorization");
+            case 2004:
+                return L10NString.getString("umgr_rcode_illigel_grant_type");
+            case 2005:
+                return L10NString.getString("umgr_rcode_code_required");
+            case 2006:
+                return L10NString.getString("umgr_rcode_refresh_token_required");
+            case 2007:
+                return L10NString.getString("umgr_rcode_access_token_required");
+            case 2008:
+                return L10NString.getString("umgr_rcode_appid_absent");
+            case 2009:
+                return L10NString.getString("umgr_rcode_illigel_appkey");
+            case 2010:
+                return L10NString.getString("umgr_rcode_illigel_redirect_url");
+            case 2011:
+                return L10NString.getString("umgr_rcode_app_offline");
+            case 2012:
+                return L10NString.getString("umgr_rcode_http_post_required");
+            case 2013:
+                return L10NString.getString("umgr_rcode_illigel_access_token");
+            case 2014:
+                return L10NString.getString("umgr_rcode_access_token_expired");
+            case 2015:
+                return L10NString.getString("umgr_rcode_access_token_abolished");
+            case 2016:
+                return L10NString.getString("umgr_rcode_validate_access_token_failure");
+            case 2017:
+                return L10NString.getString("umgr_rcode_get_appid_failure");
+            case 2018:
+                return L10NString.getString("umgr_rcode_get_code_failure");
+            case 2019:
+                return L10NString.getString("umgr_rcode_get_access_token_by_code_failure");
+            case 2020:
+                return L10NString.getString("umgr_rcode_code_reused");
+            case 2021:
+                return L10NString.getString("umgr_rcode_get_access_token_failure");
+            case 2022:
+                return L10NString.getString("umgr_rcode_get_refresh_token_failure");
+            case 2023:
+                return L10NString.getString("umgr_rcode_get_app_scope_failure");
+            case 2024:
+                return L10NString.getString("umgr_rcode_get_app_scope_on_user_failure");
+            case 2025:
+                return L10NString.getString("umgr_rcode_get_api_failure");
+            case 2026:
+                return L10NString.getString("umgr_rcode_authorize_scope_failure");
+            case 2027:
+                return L10NString.getString("umgr_rcode_authorize_expiretime_failure");
+            case 2028:
+                return L10NString.getString("umgr_rcode_api_unauthorized");
+            case 2029:
+                return L10NString.getString("umgr_rcode_unsupport_request_method");
+            case 2030:
+                return L10NString.getString("umgr_rcode_user_do_not_authorize");
+            case 2031:
+                return L10NString.getString("umgr_rcode_third_app_not_authorize");
+            case 2032:
+                return L10NString.getString("umgr_rcode_openid_is_null");
+            case 2034:
+                return L10NString.getString("umgr_rcode_app_apply_permissions_required");
+            case 2035:
+                return L10NString.getString("umgr_rcode_illigel_uid");
+            case 3000:
+            case 3001:
+            case 3002:
+            case 3003:
+            case 3004:
+            case 3005:
+            case 3006:
+            case 3007:
+            case 3008:
+            case 3009:
+            case 3010:
+            case 3100:
+                return L10NString.getString("umgr_rcode_http_failure");
+            case 4000:
+                return L10NString.getString("umgr_rcode_input_appid_mismatch");
+            case 4001:
+                return L10NString.getString("umgr_rcode_json_parse_failure");
+            case 4002:
+                return L10NString.getString("umgr_rcode_server_uninstalled");
+            case 4003:
+                return L10NString.getString("umgr_rcode_server_startup_failure");
+            case 4004:
+                return L10NString.getString("umgr_rcode_illigel_appid_configuration");
+            case 4005:
+                return L10NString.getString("umgr_rcode_response_mismatch");
+            case 4006:
+                return L10NString.getString("umgr_rcode_rpc_failure");
+            case 4007:
+                return L10NString.getString("umgr_rcode_http_ioexception");
+            case 4008:
+                return L10NString.getString("umgr_rcode_http_ioexception");
+            case 4009:
+                return L10NString.getString("umgr_rcode_userid_required");
+            case 4010:
+                return L10NString.getString("umgr_rcode_get_local_logininfo_failed");
+            case 4011:
+                return L10NString.getString("umgr_rcode_req_unsupported");
+            case 4012:
+                return L10NString.getString("umgr_rcode_json_encoding_failure");
+            case 4013:
+                return L10NString.getString("umgr_rcode_invalid_response");
+            case 4014:
+                return L10NString.getString("umgr_rcode_rpc_connect_timeout");
+            case 4015:
+                return L10NString.getString("umgr_rcode_rpc_no_response");
+            case 4016:
+                return L10NString.getString("umgr_rcode_user_unlogined");
+            case 4017:
+                return L10NString.getString("umgr_rcode_illigel_request");
+            case 4018:
+                return L10NString.getString("umgr_rcode_send_message_failure");
+            case 4019:
+                return L10NString.getString("umgr_rcode_activate_no_reponse");
+            case 5000:
+                return L10NString.getString("umgr_error_illigel_username");
+            case 5001:
+                return L10NString.getString("umgr_error_illigel_authcode");
+            case 5002:
+                return L10NString.getString("umgr_error_illigel_confirm_pwd");
+            case 5003:
+                return L10NString.getString("umgr_error_local_storage_failure");
+            case 5004:
+                return L10NString.getString("umgr_rcode_illigel_mail");
+            case 5005:
+                return L10NString.getString("umgr_rcode_illegal_siminfo");
+            case 7001:
+                return L10NString.getString("umgr_rcode_ttoken_invalid");
+            case 7002:
+                return L10NString.getString("umgr_rcode_tuid_invalid");
+            case 7003:
+                return L10NString.getString("umgr_rcode_tappid_invalid");
+            case 7004:
+                return L10NString.getString("umgr_rcode_tuid_not_bind");
+            case 7005:
+                return L10NString.getString("umgr_rcode_login_system_error");
+            case 7006:
+                return L10NString.getString("umgr_rcode_get_tuid_error");
+            case 7007:
+                return L10NString.getString("umgr_rcode_bind_account_failure");
+            case 7008:
+                return L10NString.getString("umgr_rcode_operate_shadow_account_failure");
+            case 7009:
+                return L10NString.getString("umgr_rcode_update_bindaccount_error");
+            case 7010:
+                return L10NString.getString("umgr_rcode_tappid_error");
+            case 7011:
+                return L10NString.getString("umgr_rcode_uac_already_binded");
+            case 7012:
+                return L10NString.getString("umgr_rcode_third_already_binded");
+            case 7013:
+                return L10NString.getString("umgr_rcode_userinfo_illegalthird");
+            case 7014:
+                return L10NString.getString("umgr_rcode_third_unbind_error");
+            case 7015:
+                return L10NString.getString("umgr_rcode_get_360shadow_error");
+            case 7016:
+                return L10NString.getString("umgr_rcode_refresh_360token_error");
+            case 7017:
+                return L10NString.getString("umgr_rcode_notify_360_error");
+            case 7018:
+                return L10NString.getString("umgr_rcode_contains_invalid_character");
+            case 7019:
+                return L10NString.getString("umgr_rcode_contains_invalid_character");
+            case 10002:
+                return L10NString.getString("umgr_rcode_easyactivate_error_manually");
+            case 10003:
+                return L10NString.getString("umgr_rcode_check360password_error_error");
+            default:
+                return L10NString.getString("umgr_rcode_fail");
+        }
+    }
+
+    public static String getString(Context context, int rcode) {
+        return context.getString(rcode);
+    }
+}

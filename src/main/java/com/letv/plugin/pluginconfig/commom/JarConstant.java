@@ -1,0 +1,41 @@
+package com.letv.plugin.pluginconfig.commom;
+
+public interface JarConstant {
+    public static final String LESO_ACTION_LeSoDetailActivity = "com.letv.lesophoneclient.ex.LeSoDetailActivity";
+    public static final String LESO_ACTION_LeSoMainActivity = "com.letv.lesophoneclient.ex.LeSoMainActivity";
+    public static final String LESO_ACTION_LeSoSearchResultActivity = "com.letv.lesophoneclient.ex.LeSoSearchResultActivity";
+    public static final String LESO_ACTION_LeSoSearchSportStarActivity = "com.letv.lesophoneclient.ex.LeSoSearchSportStarActivity";
+    public static final String LESO_ACTION_LeSoSearchStarActivity = "com.letv.lesophoneclient.ex.LeSoSearchStarActivity";
+    public static final String LESO_ACTION_LeSoWebView = "com.letv.lesophoneclient.ex.LeSoWebView";
+    public static final String LETV_ADS_NAME = "Letv_Ads.apk";
+    public static final String LETV_ADS_PACKAGENAME = "com.letv.ads";
+    public static final String LETV_ADS_PLAYFRAGMENT_CLASS = "ui.ADPlayFragment";
+    public static final String LETV_ADS_VIEW_CLASS = "view.AdView";
+    public static final String LETV_ADS_WEB_ACTIVITY_CLASS = "ui.LetvWebViewActivity";
+    public static final String LETV_JARLIBS_NAME = "LetvJarLibs.apk";
+    public static final String LETV_JARLIBS_PACKAGENAME = "com.letv.jarlibs";
+    public static final String LETV_LESO_NAME = "LetvLeso.apk";
+    public static final String LETV_LESO_PACKAGENAME = "com.letv.lesophoneclient";
+    public static final String LETV_SHARE_NAME = "LetvShare.apk";
+    public static final String LETV_SHARE_PACKAGENAME = "com.letv.share";
+    public static final String LETV_SPORT_GAME_PACKAGENAME = "com.letv.sport.game.sdk";
+    public static final String LETV_SPORT_GAMGE_NAME = "LetvSportGame.apk";
+    public static final String LETV_TOPIC_CLASS_NAME = "LetvTopicActivity";
+    public static final String LETV_TOPIC_NAME = "LetvTopic.apk";
+    public static final String LETV_TOPIC_PACKAGENAME = "com.letv.topic";
+    public static final String LETV_TOPIC_WEBVIEW_ACTIVITY_CLASS_NAME = "webview.LetvWebViewActivity";
+    public static final String LETV_WO_NAME = "LetvWo.apk";
+    public static final String LETV_WO_PACKAGENAME = "com.letv.android.wo";
+    public static final String LETV_ZXING_NAME = "LetvZxing.apk";
+    public static final String LETV_ZXING_PACKAGENAME = "com.letv.zxing";
+    public static final String LEZXING_ACTION_CAPTUREACTIVITY = "com.letv.zxing.ex.CaptureActivity";
+    public static final String PLUGIN_APK_NAME_WINDOW_PLAYER = "LetvWindowPlayer.apk";
+    public static final String PLUGIN_CLASS_NAME_WINDOW_PLAYER_HELPER = "WindowPlayerHelper";
+    public static final String PLUGIN_CLASS_NAME_WINDOW_PLAYER_SERVICE = "WindowPlayerService";
+    public static final String PLUGIN_PACKAGE_NAME_WINDOW_PLAYER = "com.letv.windowplayer";
+    public static final String PLUGIN_WINDOW_PLAYER_STATIC_METHOD_NAME_START = "start";
+    public static final String PLUGIN_WINDOW_PLAYER_STATIC_METHOD_NAME_STOP = "stop";
+    public static final String PLUS_TEST_NAME = "AddFunc.jar";
+    public static final String PLUS_TEST_PACKAGNAME = "com.demo.jar";
+    public static final String PROXY_ACTION = "com.letv.plugin.pluginloader.proxyactivity.VIEW";
+}

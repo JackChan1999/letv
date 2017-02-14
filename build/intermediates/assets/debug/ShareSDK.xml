@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Created by TedYin 5/11/15 1:07 PM.
+  ~ Copyright (c) 2015 Boohee, Inc. All rights reserved.
+  -->
+
+<DevInfor>
+
+    <ShareSDK AppKey="75857768baa6" />
+
+    <SinaWeibo
+        AppKey="3300581600"
+        AppSecret="dffcf3101f8b2180d96c34b961f578bd"
+        Enable="true"
+        RedirectUrl="http://sns.whalecloud.com/sina2/callback"
+        ShareByAppClient="false"
+        Id="1"
+        SortId="1" />
+
+    <Wechat
+        AppId="wxaddc5c19a31e9d39"
+        AppSecret="1f98ca2de209fb04baea8fd983c8fc45"
+        BypassApproval="false"
+        Enable="true"
+        Id="3"
+        SortId="3" />
+
+    <WechatMoments
+        AppId="wxaddc5c19a31e9d39"
+        AppSecret="1f98ca2de209fb04baea8fd983c8fc45"
+        BypassApproval="false"
+        Enable="true"
+        Id="6"
+        SortId="6" />
+
+    <QZone
+        AppId="100530867"
+        AppKey="d32ea174315e9c42bfbd481ac3b3fef6"
+        Enable="false"
+        Id="9"
+        ShareByAppClient="true"
+        SortId="9" />
+
+</DevInfor>
